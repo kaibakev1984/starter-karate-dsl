@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestRunner" time="35.06" tests="14" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\kvasquez\Documents\charly-projects\starter-karate-dsl\target\test-classes;C:\Users\kvasquez\Documents\charly-projects\starter-karate-dsl\target\classes;C:\Users\kvasquez\.m2\repository\com\intuit\karate\karate-junit5\1.1.0\karate-junit5-1.1.0.jar;C:\Users\kvasquez\.m2\repository\com\intuit\karate\karate-core\1.1.0\karate-core-1.1.0.jar;C:\Users\kvasquez\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\kvasquez\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\kvasquez\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\kvasquez\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\kvasquez\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\kvasquez\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\kvasquez\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\kvasquez\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\kvasquez\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\kvasquez\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\kvasquez\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\kvasquez\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\kvasquez\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\kvasquez\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\kvasquez\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\kvasquez\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\kvasquez\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\kvasquez\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\kvasquez\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\kvasquez\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\kvasquez\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\kvasquez\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\kvasquez\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\kvasquez\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\kvasquez\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\kvasquez\.m2\repository\net\masterthought\cucumber-reporting\4.11.2\cucumber-reporting-4.11.2.jar;C:\Users\kvasquez\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.9.3\jackson-databind-2.9.9.3.jar;C:\Users\kvasquez\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\kvasquez\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;C:\Users\kvasquez\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\kvasquez\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\kvasquez\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\kvasquez\.m2\repository\velocity-tools\velocity-tools\1.4\velocity-tools-1.4.jar;C:\Users\kvasquez\.m2\repository\joda-time\joda-time\2.10.2\joda-time-2.10.2.jar;C:\Users\kvasquez\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\kvasquez\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\kvasquez\.m2\repository\org\codehaus\plexus\plexus-utils\3.2.0\plexus-utils-3.2.0.jar;C:\Users\kvasquez\.m2\repository\org\jsoup\jsoup\1.12.1\jsoup-1.12.1.jar;C:\Users\kvasquez\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20190610.1\owasp-java-html-sanitizer-20190610.1.jar;C:\Users\kvasquez\.m2\repository\com\google\guava\guava\27.1-jre\guava-27.1-jre.jar;C:\Users\kvasquez\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kvasquez\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kvasquez\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kvasquez\.m2\repository\org\checkerframework\checker-qual\2.5.2\checker-qual-2.5.2.jar;C:\Users\kvasquez\.m2\repository\com\google\errorprone\error_prone_annotations\2.2.0\error_prone_annotations-2.2.0.jar;C:\Users\kvasquez\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\kvasquez\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;C:\Users\kvasquez\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\kvasquez\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
+    <property name="sun.java.command" value="C:\Users\kvasquez\AppData\Local\Temp\surefire12453096134655582582\surefirebooter14721024945971482219.jar C:\Users\kvasquez\AppData\Local\Temp\surefire12453096134655582582 2022-02-26T00-18-49_172-jvmRun1 surefire1269379151730994028tmp surefire_011099807486954287191tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="TestRunner#testAll"/>
+    <property name="surefire.test.class.path" value="C:\Users\kvasquez\Documents\charly-projects\starter-karate-dsl\target\test-classes;C:\Users\kvasquez\Documents\charly-projects\starter-karate-dsl\target\classes;C:\Users\kvasquez\.m2\repository\com\intuit\karate\karate-junit5\1.1.0\karate-junit5-1.1.0.jar;C:\Users\kvasquez\.m2\repository\com\intuit\karate\karate-core\1.1.0\karate-core-1.1.0.jar;C:\Users\kvasquez\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\kvasquez\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\kvasquez\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\kvasquez\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\kvasquez\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\kvasquez\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\kvasquez\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\kvasquez\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\kvasquez\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\kvasquez\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\kvasquez\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\kvasquez\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\kvasquez\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\kvasquez\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\kvasquez\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\kvasquez\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\kvasquez\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\kvasquez\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\kvasquez\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\kvasquez\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\kvasquez\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\kvasquez\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\kvasquez\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\kvasquez\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\kvasquez\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\kvasquez\.m2\repository\net\masterthought\cucumber-reporting\4.11.2\cucumber-reporting-4.11.2.jar;C:\Users\kvasquez\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.9.3\jackson-databind-2.9.9.3.jar;C:\Users\kvasquez\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\kvasquez\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;C:\Users\kvasquez\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\kvasquez\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\kvasquez\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\kvasquez\.m2\repository\velocity-tools\velocity-tools\1.4\velocity-tools-1.4.jar;C:\Users\kvasquez\.m2\repository\joda-time\joda-time\2.10.2\joda-time-2.10.2.jar;C:\Users\kvasquez\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\kvasquez\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\kvasquez\.m2\repository\org\codehaus\plexus\plexus-utils\3.2.0\plexus-utils-3.2.0.jar;C:\Users\kvasquez\.m2\repository\org\jsoup\jsoup\1.12.1\jsoup-1.12.1.jar;C:\Users\kvasquez\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20190610.1\owasp-java-html-sanitizer-20190610.1.jar;C:\Users\kvasquez\.m2\repository\com\google\guava\guava\27.1-jre\guava-27.1-jre.jar;C:\Users\kvasquez\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\kvasquez\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kvasquez\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kvasquez\.m2\repository\org\checkerframework\checker-qual\2.5.2\checker-qual-2.5.2.jar;C:\Users\kvasquez\.m2\repository\com\google\errorprone\error_prone_annotations\2.2.0\error_prone_annotations-2.2.0.jar;C:\Users\kvasquez\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\kvasquez\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;C:\Users\kvasquez\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\kvasquez\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\kvasquez"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\kvasquez\Documents\charly-projects\starter-karate-dsl"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="karate.options" value="--tags ~@ignore"/>
+    <property name="surefire.real.class.path" value="C:\Users\kvasquez\AppData\Local\Temp\surefire12453096134655582582\surefirebooter14721024945971482219.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.8+10-LTS"/>
+    <property name="user.name" value="kvasquez"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\kvasquez\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\kvasquez\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.8"/>
+    <property name="user.dir" value="C:\Users\kvasquez\Documents\charly-projects\starter-karate-dsl"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\AdoptOpenJDK\jre-15.0.0.36-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Windows\CCM;C:\webdrivers;C:\opt\apache-maven-3.6.3\bin;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\mpv.install\tools;C:\Program Files (x86)\dotnet\;C:\opt\allure-cli;C:\opt\allure-cli\bin;C:\opt\allure-cli\bin\allure.bat;C:\opt\allure-cli\lib;;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Gource\cmd;C:\Users\kvasquez\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\heroku\bin;C:\Users\kvasquez\AppData\Local\Android\Sdk\emulator;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kvasquez\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\kvasquez\AppData\Local\Programs\Python\Python39\;C:\Ruby26-x64\bin;C:\Users\kvasquez\AppData\Local\Microsoft\WindowsApps;C:\Users\kvasquez\AppData\Local\Programs\Microsoft VS Code\bin;C:\opt\apache-maven-3.6.3\bin;C:\Users\kvasquez\AppData\Local\GitHubDesktop\bin;C:\Users\kvasquez\AppData\Local\gitkraken\bin;C:\Users\kvasquez\AppData\Roaming\npm;C:\Program Files\heroku\bin;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.8+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testAll[1][1]" classname="TestRunner" time="7.46"/>
+  <testcase name="testAll[1][2]" classname="TestRunner" time="2.794"/>
+  <testcase name="testAll[2][1]" classname="TestRunner" time="1.001"/>
+  <testcase name="testAll[2][2]" classname="TestRunner" time="0.955">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 737, url: https://petstore.swagger.io/v2/pet/10, response: &#10;{&quot;code&quot;:1,&quot;type&quot;:&quot;error&quot;,&quot;message&quot;:&quot;Pet not found&quot;}&#10;classpath:petstore/features/pet-example-1.feature:28" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 737, url: https://petstore.swagger.io/v2/pet/10, response: 
+{"code":1,"type":"error","message":"Pet not found"}
+classpath:petstore/features/pet-example-1.feature:28
+</failure>
+    <system-out><![CDATA[00:19:15.781 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:19:15.830 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/10
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:19:16.572 [main] DEBUG com.intuit.karate - response time in milliseconds: 737
+1 < 404
+1 < Date: Sat, 26 Feb 2022 03:19:16 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"Pet not found"}
+00:19:16.578 [main] ERROR com.intuit.karate - classpath:petstore/features/pet-example-1.feature:28
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 737, url: https://petstore.swagger.io/v2/pet/10, response: 
+{"code":1,"type":"error","message":"Pet not found"}
+classpath:petstore/features/pet-example-1.feature:28
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[2][3]" classname="TestRunner" time="0.663"/>
+  <testcase name="testAll[2][4]" classname="TestRunner" time="1.502"/>
+  <testcase name="testAll[3][1]" classname="TestRunner" time="0.915"/>
+  <testcase name="testAll[3][2]" classname="TestRunner" time="0.707">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 697, url: https://petstore.swagger.io/v2/store/order/10, response: &#10;{&quot;code&quot;:1,&quot;type&quot;:&quot;error&quot;,&quot;message&quot;:&quot;Order not found&quot;}&#10;classpath:petstore/features/store-example-1.feature:28" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 697, url: https://petstore.swagger.io/v2/store/order/10, response: 
+{"code":1,"type":"error","message":"Order not found"}
+classpath:petstore/features/store-example-1.feature:28
+</failure>
+    <system-out><![CDATA[00:19:19.845 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:19:19.862 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/order/10
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:19:20.560 [main] DEBUG com.intuit.karate - response time in milliseconds: 697
+1 < 404
+1 < Date: Sat, 26 Feb 2022 03:19:20 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"Order not found"}
+00:19:20.561 [main] ERROR com.intuit.karate - classpath:petstore/features/store-example-1.feature:28
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 697, url: https://petstore.swagger.io/v2/store/order/10, response: 
+{"code":1,"type":"error","message":"Order not found"}
+classpath:petstore/features/store-example-1.feature:28
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][3]" classname="TestRunner" time="1.119">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 736, url: https://petstore.swagger.io/v2/store/order/10, response: &#10;{&quot;code&quot;:404,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;Order Not Found&quot;}&#10;classpath:petstore/features/store-example-1.feature:34" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 736, url: https://petstore.swagger.io/v2/store/order/10, response: 
+{"code":404,"type":"unknown","message":"Order Not Found"}
+classpath:petstore/features/store-example-1.feature:34
+</failure>
+    <system-out><![CDATA[00:19:20.568 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:19:20.581 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://petstore.swagger.io/v2/store/order/10
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:19:21.318 [main] DEBUG com.intuit.karate - response time in milliseconds: 736
+1 < 404
+1 < Date: Sat, 26 Feb 2022 03:19:21 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":404,"type":"unknown","message":"Order Not Found"}
+00:19:21.321 [main] ERROR com.intuit.karate - classpath:petstore/features/store-example-1.feature:34
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 736, url: https://petstore.swagger.io/v2/store/order/10, response: 
+{"code":404,"type":"unknown","message":"Order Not Found"}
+classpath:petstore/features/store-example-1.feature:34
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][4]" classname="TestRunner" time="1.76"/>
+  <testcase name="testAll[4][1]" classname="TestRunner" time="0.369"/>
+  <testcase name="testAll[4][2]" classname="TestRunner" time="0.769">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 730, url: https://petstore.swagger.io/v2/user/kmitnick, response: &#10;{&quot;code&quot;:1,&quot;type&quot;:&quot;error&quot;,&quot;message&quot;:&quot;User not found&quot;}&#10;classpath:petstore/features/user-example-1.feature:32" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 730, url: https://petstore.swagger.io/v2/user/kmitnick, response: 
+{"code":1,"type":"error","message":"User not found"}
+classpath:petstore/features/user-example-1.feature:32
+</failure>
+    <system-out><![CDATA[00:19:23.782 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:19:23.813 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/user/kmitnick
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:19:24.544 [main] DEBUG com.intuit.karate - response time in milliseconds: 730
+1 < 404
+1 < Date: Sat, 26 Feb 2022 03:19:24 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"User not found"}
+00:19:24.546 [main] ERROR com.intuit.karate - classpath:petstore/features/user-example-1.feature:32
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 730, url: https://petstore.swagger.io/v2/user/kmitnick, response: 
+{"code":1,"type":"error","message":"User not found"}
+classpath:petstore/features/user-example-1.feature:32
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[4][3]" classname="TestRunner" time="0.724">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 717, url: https://petstore.swagger.io/v2/user/kmitnick, response: &#10;{&quot;code&quot;:1,&quot;type&quot;:&quot;error&quot;,&quot;message&quot;:&quot;User not found&quot;}&#10;classpath:petstore/features/user-example-1.feature:47" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 717, url: https://petstore.swagger.io/v2/user/kmitnick, response: 
+{"code":1,"type":"error","message":"User not found"}
+classpath:petstore/features/user-example-1.feature:47
+</failure>
+    <system-out><![CDATA[00:19:24.556 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:19:24.582 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/user/kmitnick
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"id":"#number","username":"#string","firstName":"#string","lastName":"#string","email":"#string","password":"#string","phone":"#string","userStatus":"#number"}
+
+00:19:25.300 [main] DEBUG com.intuit.karate - response time in milliseconds: 717
+1 < 404
+1 < Date: Sat, 26 Feb 2022 03:19:25 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: close
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"User not found"}
+00:19:25.301 [main] ERROR com.intuit.karate - classpath:petstore/features/user-example-1.feature:47
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 717, url: https://petstore.swagger.io/v2/user/kmitnick, response: 
+{"code":1,"type":"error","message":"User not found"}
+classpath:petstore/features/user-example-1.feature:47
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[4][4]" classname="TestRunner" time="2.369">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 720, url: https://petstore.swagger.io/v2/user/kmitnick, response: &#10;&#10;classpath:petstore/features/user-example-1.feature:53" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 720, url: https://petstore.swagger.io/v2/user/kmitnick, response: 
+
+classpath:petstore/features/user-example-1.feature:53
+</failure>
+    <system-out><![CDATA[00:19:25.312 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:19:25.329 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://petstore.swagger.io/v2/user/kmitnick
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:19:26.049 [main] DEBUG com.intuit.karate - response time in milliseconds: 720
+1 < 404
+1 < Date: Sat, 26 Feb 2022 03:19:26 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+
+00:19:26.051 [main] ERROR com.intuit.karate - classpath:petstore/features/user-example-1.feature:53
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 720, url: https://petstore.swagger.io/v2/user/kmitnick, response: 
+
+classpath:petstore/features/user-example-1.feature:53
+---------------------------------------------------------
+feature: classpath:petstore/features/user-example-1.feature
+scenarios:  4 | passed:  1 | failed:  3 | time: 3.1844
+---------------------------------------------------------
+
+Karate version: 1.1.0
+======================================================
+elapsed:  31.14 | threads:    1 | thread time: 15.77 
+features:     4 | skipped:    0 | efficiency: 0.51
+scenarios:   14 | passed:     8 | failed: 6
+======================================================
+>>> failed features:
+status code was: 404, expected: 200, response time in milliseconds: 730, url: https://petstore.swagger.io/v2/user/kmitnick, response: 
+{"code":1,"type":"error","message":"User not found"}
+classpath:petstore/features/user-example-1.feature:32
+status code was: 404, expected: 200, response time in milliseconds: 717, url: https://petstore.swagger.io/v2/user/kmitnick, response: 
+{"code":1,"type":"error","message":"User not found"}
+classpath:petstore/features/user-example-1.feature:47
+status code was: 404, expected: 200, response time in milliseconds: 720, url: https://petstore.swagger.io/v2/user/kmitnick, response: 
+
+classpath:petstore/features/user-example-1.feature:53
+status code was: 404, expected: 200, response time in milliseconds: 697, url: https://petstore.swagger.io/v2/store/order/10, response: 
+{"code":1,"type":"error","message":"Order not found"}
+classpath:petstore/features/store-example-1.feature:28
+status code was: 404, expected: 200, response time in milliseconds: 736, url: https://petstore.swagger.io/v2/store/order/10, response: 
+{"code":404,"type":"unknown","message":"Order Not Found"}
+classpath:petstore/features/store-example-1.feature:34
+status code was: 404, expected: 200, response time in milliseconds: 737, url: https://petstore.swagger.io/v2/pet/10, response: 
+{"code":1,"type":"error","message":"Pet not found"}
+classpath:petstore/features/pet-example-1.feature:28
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.1.0
+file:///C:/Users/kvasquez/Documents/charly-projects/starter-karate-dsl/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,7 @@
+target(
+*.iml
+*.swp
+.idea/
+.project
+allure-results/
+.settings/
