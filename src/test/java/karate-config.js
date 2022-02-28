@@ -2,7 +2,7 @@ function fn() {
   var env = karate.env;
   karate.log('karate.env system property was:', env);
   if (!env) {
-    env = 'dev';
+    env = 'qa';
   }
   var config = {
     path_pet: '/v2/pet',
