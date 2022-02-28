@@ -1,18 +1,15 @@
 function fn() {
-  var env = karate.env; // get system property 'karate.env'
+  var env = karate.env;
   karate.log('karate.env system property was:', env);
   if (!env) {
     env = 'dev';
   }
   var config = {
-    env: env,
-    myVarName: 'someValue'
+    path_pet: '/v2/pet',
+    path_user: '/v2/user',
+    path_order: '/v2/store/order',
+    path_inventory: '/v2/store/inventory'
   }
-  if (env == 'dev') {
-    // customize
-    // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
-    // customize
-  }
+  config.environment = karate.call('classpath:core/environment/config-' + env + '.js');
   return config;
 }
