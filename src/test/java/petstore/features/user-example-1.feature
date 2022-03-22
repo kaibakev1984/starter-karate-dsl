@@ -1,3 +1,4 @@
+@run
 Feature: User example
 
   Background: Preconditions
