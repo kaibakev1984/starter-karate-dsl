@@ -11,6 +11,7 @@ Feature: User example
     * header Accept = 'application/json'
     * header Content-Type = 'application/json'
 
+  @run
   Scenario: create user
     * set req_create_user.id = environment.flow.user.id
     * set req_create_user.username = environment.flow.user.username
@@ -26,12 +27,14 @@ Feature: User example
     Then status 200
     And match response == res_create_user
 
+  @run
   Scenario: get user by user name
     Given path path_user, environment.flow.user.username
     When method GET
     Then status 200
     And match response == res_get_user
 
+  @run
   Scenario: updated user
     * set req_updated_user.id = environment.flow.user.new_id
     * set req_updated_user.username = environment.flow.user.new_username

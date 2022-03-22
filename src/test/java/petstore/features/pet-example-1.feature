@@ -1,3 +1,4 @@
+@run
 Feature: Pet example
 
   Background: Preconditions
