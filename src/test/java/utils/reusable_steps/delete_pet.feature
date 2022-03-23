@@ -1,7 +1,7 @@
 Feature: Delete pet
 
   Background: Preconditions
-    * def res_deletes_pet = read('../response/delete_pet.json')
+    * def res_deletes_pet = read('../' + constants.delete_pet.response)
     * url environment.url
 
   Scenario: Delete pet

@@ -1,8 +1,8 @@
 Feature: Place order
 
   Background: Preconditions
-    * def req_place_order_for_pet = read('../request/place_order_for_pet.json')
-    * def res_place_order_for_pet = read('../response/place_order_for_pet.json')
+    * def req_place_order_for_pet = read('../' + constants.place_order.request)
+    * def res_place_order_for_pet = read('../' + constants.place_order.response)
     * url environment.url
 
   Scenario: place an order for a pet

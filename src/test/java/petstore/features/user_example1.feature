@@ -1,12 +1,12 @@
 Feature: User example
 
   Background: Preconditions
-    * def req_create_user = read('../request/create_user.json')
-    * def res_create_user = read('../response/create_user.json')
-    * def res_get_user = read('../response/get_user_by_user_name.json')
-    * def req_updated_user = read('../request/updated_user.json')
-    * def res_updated_user = read('../response/updated_user.json')
-    * def res_delete_user = read('../response/delete_user.json')
+    * def req_create_user = read('../' + constants.create_user.request)
+    * def res_create_user = read('../' + constants.create_user.response)
+    * def res_get_user = read('../' + constants.get_user.response)
+    * def req_updated_user = read('../' + constants.update_user.request)
+    * def res_updated_user = read('../' + constants.update_user.response)
+    * def res_delete_user = read('../' + constants.delete_user.response)
     * url environment.url
     * header Accept = 'application/json'
     * header Content-Type = 'application/json'

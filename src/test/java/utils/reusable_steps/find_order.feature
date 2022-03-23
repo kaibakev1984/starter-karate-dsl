@@ -1,7 +1,7 @@
 Feature: Find purchase order
 
   Background: Preconditions
-    * def res_find_purchase_order = read('../response/find_purchase_order.json')
+    * def res_find_purchase_order = read('../' + constants.find_order.response)
     * url environment.url
 
   Scenario: find purchase order

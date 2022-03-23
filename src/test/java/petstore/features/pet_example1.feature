@@ -2,11 +2,11 @@
 Feature: Pet example
 
   Background: Preconditions
-    * def req_create_pet = read('../request/create_pet.json')
-    * def res_create_pet = read('../response/create_pet.json')
-    * def res_get_pet = read('../response/get_pet_by_id.json')
-    * def req_update_pet = read('../request/update_existing_pet.json')
-    * def res_deletes_pet = read('../response/delete_pet.json')
+    * def req_create_pet = read('../' + constants.create_pet.request)
+    * def res_create_pet = read('../' + constants.create_pet.response)
+    * def res_get_pet = read('../' + constants.get_pet_by_id.response)
+    * def req_update_pet = read('../' + constants.update_pet.request)
+    * def res_deletes_pet = read('../' + constants.delete_pet.response)
     * url environment.url
     * header Accept = 'application/json'
     * header Content-Type = 'application/json'

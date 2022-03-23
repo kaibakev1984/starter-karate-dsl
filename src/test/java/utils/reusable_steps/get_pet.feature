@@ -1,7 +1,7 @@
 Feature: Get pet
 
   Background: Preconditions
-    * def res_get_pet = read('../response/get_pet_by_id.json')
+    * def res_get_pet = read('../' + constants.get_pet_by_id.response)
     * url environment.url
 
   Scenario: Get pet

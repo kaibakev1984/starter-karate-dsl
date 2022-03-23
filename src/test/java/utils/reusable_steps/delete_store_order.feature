@@ -1,7 +1,7 @@
 Feature: Delete order
 
   Background: Preconditions
-    * def res_delete_purchase_order = read('../response/delete_purchase_order.json')
+    * def res_delete_purchase_order = read('../' + constants.delete_order.response)
     * url environment.url
 
   Scenario: delete purchase order

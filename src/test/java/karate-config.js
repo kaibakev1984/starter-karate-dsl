@@ -11,5 +11,6 @@ function fn() {
     path_inventory: '/v2/store/inventory'
   }
   config.environment = karate.call('classpath:core/environment/config-' + env + '.js');
+  config.constants = karate.call('classpath:core/constants/constants.js');
   return config;
 }

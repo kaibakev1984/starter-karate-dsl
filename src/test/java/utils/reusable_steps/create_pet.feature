@@ -1,8 +1,8 @@
 Feature: Create pet
 
   Background: Preconditions
-    * def req_create_pet = read('classpath:petstore/request/create_pet.json')
-    * def res_create_pet = read('classpath:petstore/response/create_pet.json')
+    * def req_create_pet = read('classpath:petstore/' + constants.create_pet.request)
+    * def res_create_pet = read('classpath:petstore/' + constants.create_pet.response)
     * url environment.url
 
   Scenario: Create pet

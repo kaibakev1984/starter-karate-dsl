@@ -1,7 +1,7 @@
 Feature: Update pet
 
   Background: Preconditions
-    * def req_update_pet = read('../request/update_existing_pet.json')
+    * def req_update_pet = read('../' + constants.update_pet.request)
     * url environment.url
 
   Scenario: Update pet
