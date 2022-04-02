@@ -22,7 +22,7 @@ Feature: Pet example
 
     * table update_pet_input
       | name                          | categoryName                          | status                          |
-      | environment.flow.pet.new_Name | environment.flow.pet.new_CategoryName | environment.flow.pet.new_Status |
+      | environment.flow.pet.new_Name | environment.flow.pet.new_categoryname | environment.flow.pet.new_Status |
     * def result = call update_pet update_pet_input
 
     * table delete_pet_input

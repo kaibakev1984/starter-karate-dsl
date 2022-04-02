@@ -21,6 +21,13 @@ Feature: Pet example
       | status        | '<status>'       |
       | category.id   | <categoryId>     |
       | category.name | '<categoryName>' |
+    * set res_create_pet
+      | path          | value            |
+      | id            | <id>             |
+      | name          | '<name>'         |
+      | status        | '<status>'       |
+      | category.id   | <categoryId>     |
+      | category.name | '<categoryName>' |
     Given path path_pet
     And request req_create_pet
     When method POST

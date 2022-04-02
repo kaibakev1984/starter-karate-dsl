@@ -1,9 +1,5 @@
 {
-  "id": "#number",
-  "username": "#string",
-  "firstName": "#string",
-  "email": "#string",
-  "password": "#string",
-  "phone": "#string",
-  "userStatus": "#number"
+  "code": "#number",
+  "type": "#string",
+  "message": "#string"
 }

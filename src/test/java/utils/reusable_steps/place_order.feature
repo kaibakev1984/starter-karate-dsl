@@ -6,12 +6,21 @@ Feature: Place order
     * url environment.url
 
   Scenario: place an order for a pet
-    * set req_place_order_for_pet.id = __arg.id
-    * set req_place_order_for_pet.petId = __arg.petId
-    * set req_place_order_for_pet.quantity = environment.flow.store.quantity
-    * set req_place_order_for_pet.shipDate = environment.flow.store.shipDate
-    * set req_place_order_for_pet.status = environment.flow.store.status
-    * set req_place_order_for_pet.complete = environment.flow.store.complete
+    * set req_place_order_for_pet
+      | path     | value                           |
+      | id       | __arg.id                        |
+      | petId    | __arg.petId                     |
+      | quantity | environment.flow.store.quantity |
+      | shipDate | environment.flow.store.shipDate |
+      | status   | environment.flow.store.status   |
+      | complete | environment.flow.store.complete |
+    * set res_place_order_for_pet
+      | path     | value                           |
+      | id       | __arg.id                        |
+      | petId    | __arg.petId                     |
+      | quantity | environment.flow.store.quantity |
+      | status   | environment.flow.store.status   |
+      | complete | environment.flow.store.complete |
     Given path path_order
     And request req_place_order_for_pet
     When method POST

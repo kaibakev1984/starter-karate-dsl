@@ -11,12 +11,21 @@ Feature: Store example
     * header Content-Type = 'application/json'
 
   Scenario: place an order for a pet
-    * set req_place_order_for_pet.id = environment.flow.store.id
-    * set req_place_order_for_pet.petId = environment.flow.store.petId
-    * set req_place_order_for_pet.quantity = environment.flow.store.quantity
-    * set req_place_order_for_pet.shipDate = environment.flow.store.shipDate
-    * set req_place_order_for_pet.status = environment.flow.store.status
-    * set req_place_order_for_pet.complete = environment.flow.store.complete
+    * set req_place_order_for_pet
+      | path     | value                           |
+      | id       | environment.flow.store.id       |
+      | petId    | environment.flow.store.petId    |
+      | quantity | environment.flow.store.quantity |
+      | shipDate | environment.flow.store.shipDate |
+      | status   | environment.flow.store.status   |
+      | complete | environment.flow.store.complete |
+    * set res_place_order_for_pet
+      | path     | value                           |
+      | id       | environment.flow.store.id       |
+      | petId    | environment.flow.store.petId    |
+      | quantity | environment.flow.store.quantity |
+      | status   | environment.flow.store.status   |
+      | complete | environment.flow.store.complete |
     Given path path_order
     And request req_place_order_for_pet
     When method POST
