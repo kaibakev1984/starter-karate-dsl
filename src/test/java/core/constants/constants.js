@@ -8,7 +8,8 @@ function fn() {
         response: 'response/get_pet_by_id.json'
     }
     constants.update_pet = {
-        request: 'request/update_existing_pet.json'
+        request: 'request/update_existing_pet.json',
+        response: 'response/update_existing_pet.json'
     }
     constants.delete_pet = {
         response: 'response/delete_pet.json'
