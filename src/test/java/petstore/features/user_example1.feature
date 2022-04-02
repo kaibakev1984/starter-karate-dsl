@@ -1,3 +1,4 @@
+@run
 Feature: User example
 
   Background: Preconditions
@@ -11,7 +12,6 @@ Feature: User example
     * header Accept = 'application/json'
     * header Content-Type = 'application/json'
 
-  @run
   Scenario: create user
     * set req_create_user
       | path       | value                            |
@@ -29,7 +29,6 @@ Feature: User example
     Then status 200
     And match response == res_create_user
 
-  @run
   Scenario: get user by user name
     * set res_get_user
       | path       | value                            |
@@ -46,7 +45,6 @@ Feature: User example
     Then status 200
     And match response == res_get_user
 
-  @run
   Scenario: updated user
     * set req_updated_user
       | path       | value                                |
