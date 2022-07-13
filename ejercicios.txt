@@ -1,0 +1,28 @@
+# Manejo Avanzado de Karate
+
+[ ] repaso general
+    [ ] scenario
+
+[ ] data tables
+    [*] set
+    [ ] replace
+
+[ ] data tables csv
+    [*] como armarlos
+    [*] como leerlo desde scenarios
+    [*] ejecucion
+
+[ ] lectura de features
+    [*] como leerlos desde otra feature
+    [*] como setearle datos por parametro
+
+[ ] javascript (nashorn js)
+    [ ] validacion horas
+    [ ] armar y leer js en features
+    [ ] variables de ambiente
+
+[ ] codigo java
+    [ ] como armarlos
+    [ ] como llamarlo en feature y usarlo
+
+# Introducción a Git

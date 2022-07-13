@@ -1,0 +1,5 @@
+id,name     ,status,categoryId,categoryName
+10,Macedonio,sold  ,11        ,perro negro
+11,WallE    ,sold  ,12        ,perro trucho
+25,Pepo     ,sold  ,14        ,gato gordo
+23,Furiosa  ,sold  ,39        ,gata agresiva
