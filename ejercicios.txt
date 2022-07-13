@@ -17,9 +17,9 @@
     [*] como setearle datos por parametro
 
 [ ] javascript (nashorn js)
-    [ ] validacion horas
-    [ ] armar y leer js en features
-    [ ] variables de ambiente
+    [*] armar y leer js en features
+    [*] validacion horas
+    [*] variables de ambiente
 
 [ ] codigo java
     [ ] como armarlos
