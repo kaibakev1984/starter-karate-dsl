@@ -8,9 +8,8 @@ Feature: User example
     * def req_updated_user = read('../' + constants.update_user.request)
     * def res_updated_user = read('../' + constants.update_user.response)
     * def res_delete_user = read('../' + constants.delete_user.response)
-    * url environment.url
-    * header Accept = 'application/json'
-    * header Content-Type = 'application/json'
+    Given url environment.url
+    And header Content-Type = 'application/json'
 
   Scenario: create user
     * set req_create_user

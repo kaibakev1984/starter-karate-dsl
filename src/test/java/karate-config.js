@@ -1,9 +1,9 @@
 function fn() {
   var env = karate.env;
-  karate.log('karate.env system property was:', env);
   if (!env) {
     env = 'qa';
   }
+  karate.log('karate.env system property was:', env);
   var config = {
     path_pet: '/v2/pet',
     path_user: '/v2/user',

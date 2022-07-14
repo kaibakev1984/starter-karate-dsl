@@ -13,23 +13,27 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestRunnerParallel {
+  private static final String PETSTORE_PATH = "classpath:petstore";
+  private static final String TALLER_KARATE_PATH = "classpath:taller_karate";
 
-    @Test
-    void testRunnerParallel() {
-        Results results = Runner.path("classpath:petstore")
-                .outputCucumberJson(true)
-                .tags("~@ignore")
-                .parallel(5);
-        generateReport(results.getReportDir());
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
-    }
+  @Test
+  void testRunnerParallel() {
+    Results results =
+        Runner.path(TALLER_KARATE_PATH)
+            .outputCucumberJson(true)
+            // .tags("~@ignore")
+            .parallel(1);
+    generateReport(results.getReportDir());
+    assertEquals(0, results.getFailCount(), results.getErrorMessages());
+  }
 
-    public static void generateReport(String karateOutputPath) {
-        Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
-        List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
-        jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
-        Configuration config = new Configuration(new File("target"), "petstore");
-        ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
-        reportBuilder.generateReports();
-    }
+  public static void generateReport(String karateOutputPath) {
+    Collection<File> jsonFiles =
+        FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
+    List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
+    jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
+    Configuration config = new Configuration(new File("target"), "starter-karate-dsl");
+    ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
+    reportBuilder.generateReports();
+  }
 }
